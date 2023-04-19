@@ -15,7 +15,7 @@
 2. 创建 ordin、inspection、risk 三个数据库
 
 ```bash
-mysql -uroot -prootroot -e "CREATE DATABASE IF NOT EXISTS ordin DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;CREATE DATABASE IF NOT EXISTS inspection DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;CREATE DATABASE IF NOT EXISTS risk DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
+mysql -uroot -ppasswd -e "CREATE DATABASE IF NOT EXISTS ordin DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;CREATE DATABASE IF NOT EXISTS inspection DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;CREATE DATABASE IF NOT EXISTS risk DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
 ```
 
 ### 配置
@@ -26,7 +26,7 @@ mysql -uroot -prootroot -e "CREATE DATABASE IF NOT EXISTS ordin DEFAULT CHARACTE
 [database]
 Type = mysql
 User = root
-Password = rootroot
+Password = passwd
 Host = 127.0.0.1:3306
 ODBName = ordin
 IDBName = inspection
