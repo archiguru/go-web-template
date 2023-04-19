@@ -1,13 +1,13 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "gin-web-example API接口文档",
+        "description": "gin-web-template API接口文档",
         "title": "快速初始化gin web项目",
-        "termsOfService": "https://github.com/anzhihe/gin-web-example",
+        "termsOfService": "https://github.com/MoxiuHub/go-web-template",
         "contact": {
-            "name": "anzhihe",
-            "url": "https://chegva.com",
-            "email": "anzhihe@foxmail.com"
+            "name": "moxiu",
+            "url": "https://jonnyhub.com",
+            "email": "jonny6015@foxmail.com"
         },
         "version": "1.0.1"
     },

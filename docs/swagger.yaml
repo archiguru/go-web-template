@@ -1,10 +1,10 @@
 info:
   contact:
-    email: anzhihe@foxmail.com
-    name: anzhihe
-    url: https://chegva.com
+    email: jonny6015@foxmail.com
+    name: moxiu
+    url: https://jonnyhub.com
   description: gin-web-example API接口文档
-  termsOfService: https://github.com/anzhihe/gin-web-example
+  termsOfService: https://github.com/MoxiuHub/go-web-template
   title: 快速初始化gin web项目
   version: 1.0.1
 paths:

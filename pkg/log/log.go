@@ -10,7 +10,7 @@ import (
 )
 
 // from: https://github.com/bigwhite/experiments/blob/master/uber-zap-advanced-usage/demo4/pkg/log/log.go
-// 2022-03-12 by anzhihe add:
+// 2022-03-12 by moxiu add:
 // 1.进入开发模式，日志输出到终端
 // 2.修改时间编码器，在日志文件中使用大写字母纪录日志级别
 
@@ -159,7 +159,7 @@ type LevelEnablerFunc func(lvl Level) bool
 
 type TeeOption struct {
 	Filename string
-	Mode string
+	Mode     string
 	Ropt     RotateOptions
 	Lef      LevelEnablerFunc
 }

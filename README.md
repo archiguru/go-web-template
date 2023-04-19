@@ -1,16 +1,19 @@
-## Gin Web Example
+## Go Web Template
 
-快速初始化gin web项目示例，使用Gin、Gorm、MySQL、Redis等
+快速初始化 gin web 项目示例，使用 Gin、Gorm、MySQL、Redis 等
 
 ## 如何运行
 
 ### 依赖
+
 - MySQL
 - Redis
 
 ### 准备
+
 1. 启动MySQL和Redis服务
 2. 创建 ordin、inspection、risk 三个数据库
+
 ```bash
 mysql -uroot -prootroot -e "CREATE DATABASE IF NOT EXISTS ordin DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;CREATE DATABASE IF NOT EXISTS inspection DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;CREATE DATABASE IF NOT EXISTS risk DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
 ```
@@ -18,14 +21,15 @@ mysql -uroot -prootroot -e "CREATE DATABASE IF NOT EXISTS ordin DEFAULT CHARACTE
 ### 配置
 
 你应该修改 `conf/config.dev.toml` 配置文件
+
 ```bash
 [database]
 Type = mysql
 User = root
 Password = rootroot
 Host = 127.0.0.1:3306
-ODBName =  ordin 
-IDBName = inspection 
+ODBName = ordin
+IDBName = inspection
 RDBName = risk
 
 [redis]
@@ -33,20 +37,21 @@ Host = 127.0.0.1:6379
 Password = ""
 db = 0
 pool_size = 100
+
 ```
 
 ## 运行
 
-使用指定配置文件运行服务 `go run main.go -c conf/config.dev.toml`，或者执行 `air` 命令支持热重启服务，便于开发调试
+使用指定配置文件运行服务 `go run main.go -c conf/config.dev.toml` ，或者执行 `air` 命令支持热重启服务，便于开发调试
 
 ```bash
-$ git clone https://github.com/anzhihe/gin-web-example.git
-
-$ cd gin-web-example
-
-$ go run main.go or make run or air
+git clone https://github.com/MoxiuHub/go-web-template.git
+cd gin-web-example
+go run main.go or make run or air
 ```
+
 项目的运行信息和已存在的API
+
 ```bash
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
@@ -66,7 +71,7 @@ Listening port is 8080
 
 ## 目录结构
 
-```bash
+```text
 gin-web-example
 ├── Makefile        // 编译打包
 ├── README.md       // 使用说明

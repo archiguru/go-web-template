@@ -10,11 +10,11 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "termsOfService": "https://github.com/anzhihe/gin-web-example",
+        "termsOfService": "https://github.com/MoxiuHub/go-web-template",
         "contact": {
-            "name": "anzhihe",
-            "url": "https://chegva.com",
-            "email": "anzhihe@foxmail.com"
+            "name": "moxiu",
+            "url": "https://jonnyhub.com",
+            "email": "jonny6015@foxmail.com"
         },
         "version": "{{.Version}}"
     },
